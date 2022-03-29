@@ -22,6 +22,8 @@ export function withInitialState<TProps>(
     useEffect(() => {
       const data = localStorage.getItem("trello");
       if (!data) {
+        localStorage.setItem("trello", JSON.stringify(initialState));
+        setIsLoading(false);
         return;
       }
       setInitialState(JSON.parse(data));
