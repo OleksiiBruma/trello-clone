@@ -14,9 +14,6 @@ export const useItemDrag = (item: DragItem) => {
       return item;
     },
     end: () => dispatch(setDraggedItem(null)),
-    options: {
-      dropEffect: "move",
-    },
   });
   useEffect(() => {
     preview(getEmptyImage(), { captureDraggingState: true });

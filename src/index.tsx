@@ -5,6 +5,7 @@ import { App } from "./App";
 import { AppStateProvider } from "./state/AppStateContext";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,3 +17,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+serviceWorkerRegistration.register();
