@@ -1,7 +1,7 @@
 {
   "theme_color": "#3179ba",
   "background_color": "#3179ba",
-  "display": "standalone",
+  "display": "fullscreen",
   "start_url": ".",
   "name": "Trello clone",
   "short_name": "Trello clone",
